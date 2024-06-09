@@ -23,7 +23,7 @@ This is a simple FastAPI application that performs basic CRUD (Create, Read, Upd
 
 3. **Activate the virtual environment**:
     ```bash
-    source .venv/bin/activate
+    . .venv/bin/activate
     ```
 
 4. **Install required packages**:
@@ -56,10 +56,13 @@ This is a simple FastAPI application that performs basic CRUD (Create, Read, Upd
 ### Project Structure
 
 ```
-fastapi_app/
+CRUDOperationsFastAPI/
 ├── main.py
 └── templates/
     └── index.html
+├── .gitignore
+├── readme.md
+└── requirements.txt
 ```
 
 ### Setup Instructions
