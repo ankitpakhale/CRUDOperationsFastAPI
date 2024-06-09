@@ -18,12 +18,12 @@ This is a simple FastAPI application that performs basic CRUD (Create, Read, Upd
 
 2. **Create a virtual environment**:
     ```bash
-    virtualenv venv
+    virtualenv .venv
     ```
 
 3. **Activate the virtual environment**:
     ```bash
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
 
 4. **Install required packages**:
@@ -40,12 +40,12 @@ This is a simple FastAPI application that performs basic CRUD (Create, Read, Upd
 
 2. **Create a virtual environment**:
     ```bash
-    virtualenv venv
+    virtualenv .venv
     ```
 
 3. **Activate the virtual environment**:
     ```bash
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ```
 
 4. **Install required packages**:
