@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>FastAPI App</title>
+</head>
+
+<body>
+     <h1>Items</h1>
+     <ul>
+          {% for item in items %}
+          <li>
+               {{ item['name'] }}
+               <a href="/edit/{{ item['id'] }}">Edit</a>
+               <form action="/delete/{{ item['id'] }}" method="post" style="display:inline;">
+                    <button type="submit">Delete</button>
+               </form>
+          </li>
+          {% endfor %}
+     </ul>
+     <form action="/add_or_update" method="post">
+          {% if item %}
+          <input type="hidden" name="id" value="{{ item['id'] }}">
+          {% endif %}
+          <input type="text" name="name" placeholder="Item Name" value="{{ item['name'] if item else '' }}" required>
+          <button type="submit">{{ 'Update' if item else 'Add' }} Item</button>
+     </form>
+</body>
+
+</html>
